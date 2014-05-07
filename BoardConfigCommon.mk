@@ -66,6 +66,10 @@ TARGET_BOOTLOADER_NAME=gee
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/gee-common/bluetooth
 
+# use qcom powerhal
+ TARGET_POWERHAL_VARIANT := qcom
+ TARGET_POWERHAL_TOUCH_BOOST := true
+
 # FIXME: HOSTAPD-derived wifi driver
 BOARD_HAS_QCOM_WLAN := true
 BOARD_WLAN_DEVICE := qcwcn
